@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/logo"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:text="Screening &amp; Training"
+            android:textSize="16sp" />
+
+        <!-- <TextView
+             android:id="@+id/next"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text="Next"
+             android:textColor="@color/Pink"
+             android:textSize="16sp"
+             android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerRlt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/SkyBlue">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="60dp"
+                    android:text="How We Select,
+Screen &amp; Train Our
+Doctors"
+                    android:textColor="@color/White"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="Selection and Screening"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Each doctor is interviewed and carefully screened through a comprehensive credentialing process that includes a verification of their educational background, board certifications, training and licensure. All of this information is then verified by the NPDB (National Practitioner Data Bank)."
+                android:textSize="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="Training"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Next, each candidate goes through training on how to safely and effectively care for patients using telemedicine technologies; they are also provided nearly 200 clinical protocols and other resource materials to assist them in their practice. For example, we have a clinical protocol around ankle injuries called the Ottawa Ankle Rules, which determines whether a patient needs x-rays or if they will heal on their own. During this training phase physicians also receive training on cultural competency, sensitivity and Doctor on Demand policies and procedures.
+"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="Ongoing Quality Management"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Finally, the physician leadership at Doctor on Demand Professionals monitors each doctor's performance and quality of care. This takes place in multiple forms, one of which is patient ratings. Patients can rate every single visit and leave comments. These comments reflect back to the provider their level of professionalism, service and the patient's view on the level of helpfulness. All physicians also participate in a peer review program. This means that physicians score and rate the quality of care provided by their physician peers based on medical record reviews and other criteria. The peer review process leads to constant improvements in quality and helps ensure compliance with protocols and best practices.
+"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

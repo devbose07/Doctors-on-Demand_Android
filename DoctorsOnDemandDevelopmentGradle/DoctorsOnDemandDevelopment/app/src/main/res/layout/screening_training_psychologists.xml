@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/logo"
+            android:text="Screening &amp; Training"
+            android:textSize="16sp" />
+
+        <!-- <TextView
+             android:id="@+id/next"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text="Next"
+             android:textColor="@color/Pink"
+             android:textSize="16sp"
+             android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerRlt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/SkyBlue">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="60dp"
+                    android:text="Screening &amp;
+Training"
+                    android:textColor="@color/White"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="Selection and Screening"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="You may have heard about Doctor On Demand from a friend, or perhaps from Dr. Phil or The Doctors. Maybe you read an interesting article on us. The goal of Doctor On Demand is to bring you the medical care and treatment you need from a licensed psychologist, through app technology. Seeing a therapist from home seems like a convenient idea, but you may wonder 'how qualified are these therapists?' Learn more about our rigorous selection, screening and training process:"
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Our therapists are licensed psychologists with doctorate degrees, and bring years of clinical training and experience to the care they provide to patients."
+                android:textSize="12dp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Each psychologist is interviewed and carefully screened through a credentialing process that includes a verification of their educational background, board certifications, training and licensure."
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="Training"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Next, each psychologist goes through training on how to safely and effectively care for patients using telehealth technologies. During this training phase psychologists also receive training on cultural competency, sensitivity and Doctor on Demand policies and procedures."
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Finally, we measure each therapist's performance and quality of care. This takes place in multiple forms, one of which is patient ratings. Patients can rate every single session. That gives us a good lens into their level of professionalism, their level of service and the patient's view on the level of helpfulness."
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="The result of this lengthy and rigorous selection and training process ensures each time you call Doctor On Demand, you are speaking to and being treated by qualified, licensed psychologists who are providing quality care."
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White" >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LET'S GET STARTED!"
+            android:textColor="@color/SkyBlue"
+            android:fontFamily="sans-serif-light"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:text="We need some info to get you the best possible care."
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:layout_below="@+id/title"
+                android:textSize="16sp" />
+    <TextView
+        android:id="@+id/yourCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your visit cost:"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:layout_below="@+id/desc"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/cost1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait..."
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:layout_below="@+id/yourCost"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/cost2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your visit cost:"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:layout_below="@+id/cost1"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply Coupon"
+        android:textColor="@color/SkyBlue"
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@+id/letsgo"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/letsgo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/SkyBlue" >
+            <TextView
+                android:id="@+id/letsgoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:text="Continue"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

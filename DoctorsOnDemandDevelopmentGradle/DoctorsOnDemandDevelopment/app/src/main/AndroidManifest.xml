@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.globussoft.readydoctors.patient"
+    android:versionCode="3"
+    android:versionName="1.2">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+    <permission
+        android:name="com.globussoft.readydoctors.patient.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.globussoft.doctorsondemand.patient.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".Utills.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/head_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".video_chat.BaseLogginedUserActivity"></activity>
+
+        <activity android:name=".activity.Home"></activity>
+        <activity android:name=".activity.UpdatePassword"></activity>
+        <activity android:name=".activity.UserSupport"></activity>
+        <activity android:name=".activity.BusinessRequirements"></activity>
+        <activity android:name=".activity.GetFreeVisits"></activity>
+        <activity android:name=".activity.AddReferalSource"></activity>
+
+        <activity android:name=".activity.SignIn"></activity>
+        <activity android:name=".activity.SignUp"></activity>
+        <activity android:name=".activity.LandingScreen"></activity>
+        <activity android:name=".mediacal.Medical"></activity>
+        <activity android:name=".mediacal.MedicalScheme"></activity>
+        <activity android:name=".mediacal.MedicalScheduleType"></activity>
+        <activity android:name=".mediacal.SelectMedicalDoctor"></activity>
+        <activity android:name=".mediacal.ShowMedicalDoctor"></activity>
+
+        <activity android:name=".activity.profileEdit"></activity>
+        <activity android:name=".activity.Support"></activity>
+        <activity android:name=".activity.privacy_policy"></activity>
+        <activity android:name=".mediacal.SelectMedicalPatient"></activity>
+        <activity android:name=".mediacal.MedicalCalender"></activity>
+        <activity android:name=".mediacal.MedicalDateConfirm"></activity>
+        <activity android:name=".mediacal.VisitPurpose"></activity>
+        <activity android:name=".mediacal.TimePeriod"></activity>
+        <activity android:name=".mediacal.Medication"></activity>
+        <activity android:name=".mediacal.Allergies"></activity>
+        <activity android:name=".mediacal.Symtoms"></activity>
+        <activity android:name=".mediacal.MedicalCondition"></activity>
+        <activity android:name=".activity.ApplyAppointment"></activity>
+        <activity android:name=".activity.ApplyCoupon"></activity>
+        <activity android:name=".psychological.Psychology"></activity>
+        <activity android:name=".psychological.SelectPsychologyPatient"></activity>
+        <activity android:name=".psychological.PsychologyCalender"></activity>
+        <activity android:name=".psychological.PsychologyDateConfirm"></activity>
+        <activity android:name=".psychological.PsychologyScheduleType"></activity>
+        <activity android:name=".psychological.SelectPsychologist"></activity>
+        <activity android:name=".psychological.ShowPsychologist"></activity>
+        <activity android:name=".psychological.SelectPsychologyScheme"></activity>
+        <activity android:name=".psychological.PsychologySymtoms"></activity>
+        <activity android:name=".psychological.PsychologyVisitPurpose"></activity>
+        <activity android:name=".psychological.Psychology_medications"></activity>
+        <activity android:name=".psychological.PsychologyMedicalConditions"></activity>
+        <activity android:name=".psychological_exercises.Exercise1A"></activity>
+        <activity android:name=".psychological_exercises.Exercise1B"></activity>
+        <activity android:name=".psychological_exercises.Exercise1C"></activity>
+        <activity android:name=".psychological_exercises.Exercise1D"></activity>
+        <activity android:name=".psychological_exercises.Exercise1E"></activity>
+        <activity android:name=".psychological_exercises.Exercise1F"></activity>
+        <activity android:name=".psychological_exercises.Exercise1G"></activity>
+        <activity android:name=".psychological_exercises.Exercise2A"></activity>
+        <activity android:name=".psychological_exercises.Exercise2B"></activity>
+        <activity android:name=".psychological_exercises.Exercise2C"></activity>
+        <activity android:name=".psychological_exercises.Exercise2D"></activity>
+        <activity android:name=".psychological_exercises.Exercise2E"></activity>
+        <activity android:name=".psychological_exercises.Exercise2F"></activity>
+        <activity android:name=".psychological_exercises.Exercise2G"></activity>
+        <activity android:name=".psychological_exercises.Exercise2H"></activity>
+        <activity android:name=".psychological_exercises.Exercise2I"></activity>
+
+        <activity android:name=".pediatrics.Pediatrics"></activity>
+        <activity android:name=".pediatrics.PediatricsAllergies"></activity>
+        <activity android:name=".pediatrics.PediatricsCalendar"></activity>
+        <activity android:name=".pediatrics.PediatricsDateConfirm"></activity>
+        <activity android:name=".pediatrics.PediatricsMedialConditions"></activity>
+        <activity android:name=".pediatrics.PediatricsMedications"></activity>
+        <activity android:name=".pediatrics.PediatricsSymtoms"></activity>
+        <activity android:name=".pediatrics.PediatricsTimePeriod"></activity>
+        <activity android:name=".pediatrics.PediatricsVisitPurpose"></activity>
+        <activity android:name=".pediatrics.PediatricsScheduleType"></activity>
+        <activity android:name=".pediatrics.PediatricsScheme"></activity>
+        <activity android:name=".pediatrics.ShowPhysician"></activity>
+        <activity android:name=".pediatrics.SelectPhysician"></activity>
+
+        <activity android:name=".pregnancy_newborns.Pregnancy"></activity>
+        <activity android:name=".pregnancy_newborns.Lactation"></activity>
+        <activity android:name=".pregnancy_newborns.LactationCalender"></activity>
+        <activity android:name=".pregnancy_newborns.LactationDateConfirm"></activity>
+        <activity android:name=".pregnancy_newborns.LactationRefferral"></activity>
+        <activity android:name=".pregnancy_newborns.LactationScheduleType"></activity>
+        <activity android:name=".pregnancy_newborns.LactationScheme"></activity>
+        <activity android:name=".pregnancy_newborns.LactationVisitPurpose"></activity>
+        <activity android:name=".pregnancy_newborns.ProvideBabyAge"></activity>
+        <activity android:name=".pregnancy_newborns.SelectLactationConsultant"></activity>
+        <activity android:name=".pregnancy_newborns.ShowLactationConsultant"></activity>
+        <activity android:name=".pregnancy_newborns.BreastfedChildren"></activity>
+        <activity android:name=".pregnancy_newborns.BreastFeeding"></activity>
+        <activity android:name=".pregnancy_newborns.DeliveryWeek"></activity>
+        <activity android:name=".pregnancy_newborns.LactationMedicalHistory"></activity>
+        <activity android:name=".pregnancy_newborns.LactationMedications"></activity>
+        <activity android:name=".pregnancy_newborns.LactationSymtoms"></activity>
+        <activity android:name=".pregnancy_newborns.SelectBreastPump"></activity>
+        <activity android:name=".mediacal.MedicalReferal"></activity>
+        <activity android:name=".activity.PaymentActivity"></activity>
+        <activity android:name=".common.Pharmacies"></activity>
+        <activity android:name=".activity.MyApointments"></activity>
+        <activity android:name=".activity.MyAppointmentDetails"></activity>
+        <activity android:name=".pediatrics.Child"></activity>
+        <activity android:name=".pediatrics.AddChild"></activity>
+
+        <!--medical static views-->
+        <activity android:name=".medical_static_views.WhatIsVideoVisit"></activity>
+        <activity android:name=".medical_static_views.WhatDoWeTreat"></activity>
+        <activity android:name=".medical_static_views.Cough"></activity>
+        <activity android:name=".medical_static_views.SoreThroat"></activity>
+        <activity android:name=".medical_static_views.UTI"></activity>
+        <activity android:name=".medical_static_views.DiarrHea"></activity>
+        <activity android:name=".medical_static_views.Travel"></activity>
+        <activity android:name=".medical_static_views.SkinIssues"></activity>
+        <activity android:name=".medical_static_views.SportsInjuries"></activity>
+        <activity android:name=".medical_static_views.EyeConditions"></activity>
+        <activity android:name=".medical_static_views.WeDontTreat"></activity>
+        <activity android:name=".medical_static_views.MeetTheDoctors"></activity>
+        <activity android:name=".medical_static_views.Introduction"></activity>
+        <activity android:name=".medical_static_views.OurDoctors"></activity>
+        <activity android:name=".medical_static_views.ShowDoctor"></activity>
+        <activity android:name=".medical_static_views.ScreeningTraining"></activity>
+        <activity android:name=".medical_static_views.QualityOversight"></activity>
+        <activity android:name=".medical_static_views.Pricing"></activity>
+
+        <!--meet_us static views-->
+        <activity android:name=".meet_us.MeetUs"></activity>
+        <activity android:name=".meet_us.MeetOurProviders"></activity>
+        <activity android:name=".meet_us.ProvidersIntroduction"></activity>
+        <activity android:name=".meet_us.MeetOurPhysicians"></activity>
+        <activity android:name=".meet_us.ShowPhysician"></activity>
+        <activity android:name=".meet_us.MeetOurPsychologists"></activity>
+        <activity android:name=".meet_us.ShowPsychologist"></activity>
+        <activity android:name=".meet_us.MeetOurLactationConsultants"></activity>
+        <activity android:name=".meet_us.ShowLactationConsultant"></activity>
+        <activity android:name=".meet_us.ProvidersScreeningTraining"></activity>
+        <activity android:name=".meet_us.ProvidersQualityOversight"></activity>
+        <activity android:name=".meet_us.HowItWorks"></activity>
+        <activity android:name=".meet_us.ProvidersWhatIsVideoVisit"></activity>
+        <activity android:name=".meet_us.PrepareForVideoVisit"></activity>
+        <activity android:name=".meet_us.NewUserGuide"></activity>
+        <activity android:name=".meet_us.PricingAllDept"></activity>
+        <activity android:name=".meet_us.PressMedia"></activity>
+        <activity android:name=".meet_us.MediaInquiries"></activity>
+        <activity android:name=".meet_us.About"></activity>
+        <activity android:name=".meet_us.OurMission"></activity>
+        <activity android:name=".meet_us.MedicalBoard"></activity>
+        <activity android:name=".meet_us.Team"></activity>
+        <activity android:name=".meet_us.Privacy"></activity>
+        <activity android:name=".meet_us.OurBlog"></activity>
+        <activity android:name=".meet_us.FAQ"></activity>
+
+        <!--psychology static views-->
+        <activity android:name=".psychology_static_views.WhyVideoTherapy"></activity>
+        <activity android:name=".psychology_static_views.HowItWorksPsychology"></activity>
+        <activity android:name=".psychology_static_views.HowWeCanHelp"></activity>
+        <activity android:name=".psychology_static_views.WhyItsEffective"></activity>
+        <activity android:name=".psychology_static_views.PricingPsychology"></activity>
+        <activity android:name=".psychology_static_views.MeetThePsychologists"></activity>
+        <activity android:name=".psychology_static_views.IntroductionPsychology"></activity>
+        <activity android:name=".psychology_static_views.OurPsychologists"></activity>
+        <activity android:name=".psychology_static_views.ShowPsychologists"></activity>
+        <activity android:name=".psychology_static_views.ScreeningTrainingPsychology"></activity>
+        <activity android:name=".psychology_static_views.QualityOversightPsychology"></activity>
+
+        <!--pediactrics static views-->
+        <activity android:name=".pediatrics_static_views.PediatricsThroughVideo"></activity>
+        <activity android:name=".pediatrics_static_views.WhatDoWeTreatPediatrics"></activity>
+        <activity android:name=".pediatrics_static_views.PediatricTriage"></activity>
+        <activity android:name=".pediatrics_static_views.CoughCold"></activity>
+        <activity android:name=".pediatrics_static_views.Rashes"></activity>
+        <activity android:name=".pediatrics_static_views.WeDontTreatPediatrics"></activity>
+        <activity android:name=".pediatrics_static_views.MeetTheDoctorsPediatrics"></activity>
+        <activity android:name=".pediatrics_static_views.OurDoctorsPediatrics"></activity>
+        <activity android:name=".pediatrics_static_views.ShowDoctorPediatrics"></activity>
+        <activity android:name=".pediatrics_static_views.IntroductionPediatrics"></activity>
+        <activity android:name=".pediatrics_static_views.PricingPediatrics"></activity>
+        <activity android:name=".pediatrics_static_views.ScreeningTrainingPediatrics"></activity>
+        <activity android:name=".pediatrics_static_views.QualityOversightPediatrics"></activity>
+
+        <!--pediactrics static views-->
+        <activity android:name=".lactation_static_views.WhatIsLactationConsulting"></activity>
+        <activity android:name=".lactation_static_views.LactationConsultingThroughVideo"></activity>
+        <activity android:name=".lactation_static_views.WhatDoWeTreatLactation"></activity>
+        <activity android:name=".lactation_static_views.IssuesMom"></activity>
+        <activity android:name=".lactation_static_views.IssuesBaby"></activity>
+        <activity android:name=".lactation_static_views.MeetTheConsultants"></activity>
+        <activity android:name=".lactation_static_views.IntroductionLactation"></activity>
+        <activity android:name=".lactation_static_views.OurConsultants"></activity>
+        <activity android:name=".lactation_static_views.ShowConsultants"></activity>
+        <activity android:name=".lactation_static_views.ScreeningTrainingLactation"></activity>
+        <activity android:name=".lactation_static_views.QualityOversightLactation"></activity>
+        <activity android:name=".lactation_static_views.PricingLactation"></activity>
+
+        <activity android:name=".activity.EditProfileActivity"></activity>
+        <activity android:name=".activity.PatientInfo"></activity>
+        <!--my health-->
+        <activity android:name=".my_health.MyHealth"></activity>
+        <activity android:name=".my_health.MyPharmacies"></activity>
+        <activity android:name=".my_health.MyFavoriteProviders"></activity>
+        <activity android:name=".my_health.MyVisitHistory"></activity>
+        <activity android:name=".my_health.Messages"></activity>
+        <activity android:name=".my_health.SearchPharmacy"></activity>
+        <activity android:name=".my_health.SearchPharmacyResult"></activity>
+        <activity android:name=".my_health.LocationActivity"></activity>
+        <activity android:name=".my_health.ShowFavProvider"></activity>
+        <activity android:name=".my_health.VisitHistoryDetails"></activity>
+        <!-- See doctor stuff -->
+        <activity android:name=".see_a_doctor_now.SeeDoctorSelectPatient"></activity>
+        <activity android:name=".see_a_doctor_now.SeeDoctorScheduleType"></activity>
+        <activity android:name=".see_a_doctor_now.SeeDoctorAllergies"></activity>
+        <activity android:name=".see_a_doctor_now.SeeDoctorMedicalCondition"></activity>
+        <activity android:name=".see_a_doctor_now.SeeDoctorSymtoms"></activity>
+        <activity android:name=".see_a_doctor_now.SeeDoctorPharmacy"></activity>
+        <activity android:name=".see_a_doctor_now.SeeDoctorSearchPharmacy"></activity>
+        <activity android:name=".see_a_doctor_now.SeeDoctorSearchPharmacyResult"></activity>
+        <activity android:name=".see_a_doctor_now.SeeDoctorLocationActivity"></activity>
+        <activity android:name=".video_chat.SelectVideoCallingUser"></activity>
+        <activity android:name=".video_chat.VideoCallHome"></activity>
+        <activity android:name=".see_a_doctor_now.SeeDoctorNowConfirmSchedule"></activity>
+        <!-- paypal stuff -->
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+
+
+
+        <activity
+            android:name=".video_chat.OpponentsActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.example.doctorsondemand" >
+        </activity>
+        <activity
+            android:name=".video_chat.CallActivity"
+            android:allowTaskReparenting="true"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <!-- end -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBJ8TYBjPgF7ifOAuouJxASzOZX5mvEmGg" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <service android:name=".video_chat.IncomeCallListenerService" >
+        </service>
+        <receiver
+            android:name=".video_chat.AutoStartServiceBroadcastReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

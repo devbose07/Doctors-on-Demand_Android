@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/today"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/card_bg" >
+
+        <EditText
+            android:id="@+id/data"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/center"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint="Medication"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"/>
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/Gray" />
+
+        <!-- Spinner Element -->
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           	android:layout_toRightOf="@+id/center"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+           	android:background="@color/SkyBlue"
+            android:prompt="@string/spinner_title" />
+    </RelativeLayout>
+
+</RelativeLayout>

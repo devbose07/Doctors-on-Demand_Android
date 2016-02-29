@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray2" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="6dp"
+        android:text="TextView"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:text="Delete"/>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/city"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/phoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/state"
+        android:layout_below="@+id/state"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/state"
+        android:layout_below="@+id/phoneno"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="TextView"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

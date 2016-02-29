@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:text="YOUR CHILD"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Next"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/dark_pink"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerRlt"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:text="Please tell us some basic info about your child:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <LinearLayout
+        android:id="@+id/editbox_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:hint="Prefix" />
+
+        <View
+            android:id="@+id/prefixLine"
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/dark_gray" />
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:hint="First Name" />
+
+        <View
+            android:id="@+id/firstNameLine"
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/dark_gray" />
+        <EditText
+            android:id="@+id/midleName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:hint="Midle Name"
+            android:inputType="textPassword" />
+        <View
+            android:id="@+id/midleNameLine"
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/dark_gray" />
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:hint="Last Name"
+           />
+        <View
+            android:id="@+id/lastNameLine"
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/dark_gray" />
+        <EditText
+            android:id="@+id/suffix"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:hint="Suffix"
+             />
+        <View
+            android:id="@+id/suffixLine"
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/dark_gray" />
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:hint="Date of Birth"
+             />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editbox_layout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Gray"
+        android:text="Expand"
+        android:fontFamily="sans-serif-light"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+</RelativeLayout>

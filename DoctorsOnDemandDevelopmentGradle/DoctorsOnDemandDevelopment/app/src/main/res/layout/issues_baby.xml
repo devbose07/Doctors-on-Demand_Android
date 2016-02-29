@@ -1,0 +1,250 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/logo"
+            android:text="Issues for Baby"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- <TextView
+             android:id="@+id/next"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text="Next"
+             android:textColor="@color/Pink"
+             android:textSize="16sp"
+             android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerRlt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/medical_video" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Issues for baby"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Breast milk has the ideal mix of vitamins, fats and proteins all specifically formulated for humans. it is human-to-human milk not cow to human, making it more easily digested and causing less stress on the baby's body."
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="But the benefits don't stop there. Infants who are breastfed are less likely to have allergies, respiratory problems, diarrhea (#1 issue with infants), ear infections and less likely to be hospitalized. While they may get colds, they tend to be upper respiratory, not lower respiratory like pneumonia, which can cause hospitalization. In fact, studies have shown a link between an exclusive diet of breast milk for the first six months of life and a higher IQ."
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="For all of these reasons, the Lactation Consultants with Doctor On Demand support and encourage moms to breastfeed. When a mom is having issues with breastfeeding, our International Board Certified Lactation Consultants (IBCLCs) want to help troubleshoot. There is so much that can be learned and easily taken care of with a short video chat."
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Here are some of the issues affecting baby when breastfeeding:"
+
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="1) Weight Gain"
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Babies should gain approximately 5-7 ounces a week in the first months of life. If a mom calls concerned about the baby's weight we will evaluate the age of the baby and where she falls on the growth line. We'd also want to learn if the baby is satisfied after feeding, is she ok for a couple of hours or is she continually fussing and crying? Is she gassy or have colic or reflux? We would also consider the stool's appearance. We are trained to know what is normal and can help moms navigate through this confusing time."
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="2) Feeding Issues"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Babies are not &#34;blank slates&#34; They are born with a personality, which often influences how they eat. There are those who always seem ravenous and have such a strong suck that they damage the nipple even with correct positioning. There are the &#34;snackers&#34; who want to eat for a couple minutes every 10-15 minutes. There are babies that don't seem to know how to suck as they are always pushing the nipple out of their mouth. Others, still, might have been born with mouth malformations which make sucking very difficult. Our LC's have the training and experience necessary to recognize these and know how to help moms work through them."
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="3) Teething / Biting"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Teething and biting can be painful for mom, but just because the baby is developing teeth does not mean they need to be weaned. Our Lactation Consultants will provide moms with tips to make teething a &#34;non-event&#34;."
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="4) Weaning"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="The Lactation Consultant will guide mom through weaning or other feeding issues so that breastfeeding either resumes or mom can wean without becoming engorged and infected. The LC will guide mom through the weaning process or other feeding issues that might present themselves like weaning. For example, babies less than a year of age do not usually stop nursing on their own accord. There is usually a trigger, like a cold, or a tooth, or a sharp decrease in mom's milk supply."
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android
+        {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig
+            {
+        applicationId "com.globussoft.readydoctors.patient"
+        minSdkVersion 11
+        targetSdkVersion 23
+                multiDexEnabled true
+    }
+
+    buildTypes
+            {
+        release
+                {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+                dexOptions {
+                    javaMaxHeapSize "4g"
+                }
+    }
+}
+
+dependencies
+        {
+
+            compile 'com.android.support:support-v4:23.1.0'
+
+            compile 'com.android.support:appcompat-v7:23.1.0'
+
+            compile files('libs/PayPalAndroidSDK-2.10.0.jar')
+
+            compile files('libs/volley.jar')
+
+            compile files('libs/droidText.0.2.jar')
+
+//            provided fileTree(dir: 'libs', include: ['droidText.0.2.jar'])
+
+            compile 'com.google.android.gms:play-services-maps:8.1.0'
+
+            compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+
+            compile 'com.google.android.gms:play-services-location:8.1.0'
+
+            compile 'com.android.support:multidex:1.0.1'
+
+            compile files('libs/quickblox-android-sdk-chat-2.3.3.jar')
+
+            compile files('libs/quickblox-android-sdk-core-2.3.3.jar')
+
+            compile files('libs/quickblox-android-sdk-videochat-webrtc-2.3.3.jar')
+        }
+
+
+
+
+

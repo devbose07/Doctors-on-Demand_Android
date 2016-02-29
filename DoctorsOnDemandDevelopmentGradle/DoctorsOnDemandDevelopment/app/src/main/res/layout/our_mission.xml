@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/logo"
+            android:text="Our Mission"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- <TextView
+             android:id="@+id/next"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text="Next"
+             android:textColor="@color/Pink"
+             android:textSize="16sp"
+             android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerRlt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/SkyBlue">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Mission"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/White"/>
+
+        </RelativeLayout>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lack of access to health care providers in the United States is a massive, growing problem. The average wait time to see a physician is three weeks. Even if you can see a doctor, it takes 2-3 hours from the time you leave your home or office to the time you get back home. It takes an average of 25 days to see a psychiatrist or psychologist. Nearly half of patients with mental health issues go without treatment."
+            android:textSize="10dp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We're not getting the care that we need. We built Doctor On Demand to help address this problem."
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:textSize="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+         <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="At Doctor On Demand we provide fast, easy and cost-effective access to some of the best doctors, psychologists, and other healthcare providers in the country. Our patients can have Video Visits with these providers on their smartphone or computers at any time of day."
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:textSize="10dp"
+             android:fontFamily="sans-serif-light"
+             android:textColor="@color/black"
+            android:textStyle="normal"/>
+            
+          <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We do this without sacrificing quality. All providers are carefully screened and trained to conduct Video Visits."
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:textSize="10dp"
+              android:fontFamily="sans-serif-light"
+              android:textColor="@color/black"
+            android:textStyle="normal"/>
+            
+           <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We started with Board-Certified Physicians, who are confident in applying their experience and expertise to addressing your medical problem. We now offer access to Licensed Psychologists, who provide help for a tremendous range of mental and emotional health concerns. And, our Lactation Consultants provide invaluable support to moms as they navigate the critical first months of their babies' lives."
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:textSize="10dp"
+               android:fontFamily="sans-serif-light"
+               android:textColor="@color/black"
+            android:textStyle="normal"/>
+            
+            <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tomorrow? We'll provide care from even more health-care providers. We won't stop until we can help you improve all aspects of your physical, emotional, and behavioral health."
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:textSize="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+            android:textStyle="normal"/>
+            
+             <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is the better way to feel better."
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:textSize="10dp"
+                 android:fontFamily="sans-serif-light"
+                 android:textColor="@color/black"
+            android:textStyle="normal"/>
+            
+            
+    </LinearLayout>
+
+</ScrollView>   </RelativeLayout>

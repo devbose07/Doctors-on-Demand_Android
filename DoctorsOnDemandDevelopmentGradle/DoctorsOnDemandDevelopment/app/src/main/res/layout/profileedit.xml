@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+         >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/logo"
+            android:text="Profile"
+
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/getfreecoupon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_blue"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/getfree"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/applycoupon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/gray_blue"
+                android:text="@string/applycoupon"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/addreferral"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/gray_blue"
+                android:text="@string/addreferal"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/UpdatePwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/gray_blue"
+                android:text="Update Password"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/Updatename"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:background="@color/gray_blue"
+                android:text="@string/updatename"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/businessRequirements"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:background="@color/gray_blue"
+                android:text="Apply Business Applications"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/PrivacyPolicy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/gray_blue"
+                android:text="@string/privacypolicy"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/Support"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/gray_blue"
+                android:text="@string/support"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/gray_blue"
+                android:text="@string/Feedback"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/signout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/gray_blue"
+                android:text="@string/SignOut"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

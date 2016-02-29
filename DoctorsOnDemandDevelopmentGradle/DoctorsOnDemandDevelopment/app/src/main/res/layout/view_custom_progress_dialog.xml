@@ -1,0 +1,19 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true"
+    android:gravity = "center_vertical|center_horizontal"
+    android:background="@null"
+    >
+    <ImageView
+        android:id="@+id/animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="wait"
+        android:scaleType="centerCrop"
+        android:gravity = "center_vertical|center_horizontal"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/logo"
+            android:text="What is Lactation Consulting"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"/>
+
+        <!-- <TextView
+             android:id="@+id/next"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text="Next"
+             android:textColor="@color/Pink"
+             android:textSize="16sp"
+             android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerRlt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/SkyBlue">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="60dp"
+                android:text="Lactation Consulting"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Breast milk is nature's most powerful food and prescription, yet many moms struggle with one or more aspects of breastfeeding. To help moms work through the issues and have the best possible experience breastfeeding, we have certified Lactation Consultants at your fingertips."
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+          android:fontFamily="sans-serif-light"
+          android:textColor="@color/black"
+          android:layout_marginRight="20dp"/>
+       
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="The consultation will be just like a visit with a Doctor On Demand physician, allowing new moms to meet with a consultant from the privacy and comfort of home. We know the first two weeks are especially crucial in forming good habits and ensuring the body receives the message to start making enough milk. When there are issues, it can easily overwhelm a new mom - not only the idea of exposing her newborn to germs at the doctor's office, but also finding a qualified consultant to help her."
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+          android:fontFamily="sans-serif-light"
+          android:textColor="@color/black"
+          android:layout_marginRight="20dp"/>
+         
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="There are many specialists who take an 8-hour course and begin helping mothers. At Doctor on Demand we provide a higher level of care. All of our Lactation Consultants are International Board Certified Lactation Consultants (IBCLCs), meaning they have completed a number of prerequisite medical courses along with hours of field practice alongside another IBCLC. An IBCLC is highly qualified to troubleshoot and consider multiple avenues to solve the issues."
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+          android:fontFamily="sans-serif-light"
+          android:textColor="@color/black"
+          android:layout_marginRight="20dp"/>
+       
+       <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="One of the things moms are most concerned with Is my baby getting enough to eat?With Lactation Consultants at the ready, when mom is jumping into this new experience, we can guide her through the process, explaining why breastfeeding is so important and helping her continue to provide for her baby."
+           android:textSize="12dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="20dp"
+           android:textStyle="normal"
+           android:fontFamily="sans-serif-light"
+           android:textColor="@color/black"
+           android:layout_marginRight="20dp"/>
+           
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Lactation issues fall into two categories:"
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:fontFamily="sans-serif-light"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+
+          android:layout_marginRight="20dp"/>
+            
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Issues Affecting Baby"
+          android:textSize="12dp"
+          android:fontFamily="sans-serif-light"
+          android:textColor="@color/black"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="bold"
+
+          android:layout_marginRight="20dp"/>
+             
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Examples include not feeding, not feeding properly, not wanting to start feeding, excessively fussy during feeding and more."
+          android:textSize="12dp"
+          android:fontFamily="sans-serif-light"
+          android:textColor="@color/black"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+          android:layout_marginRight="20dp"/>
+         
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Issues Affecting Mother"
+          android:textSize="12dp"
+          android:fontFamily="sans-serif-light"
+          android:textColor="@color/black"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="bold"
+          android:layout_marginRight="20dp"/>
+       <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Examples include breast issues, nipple issues, not producing enough milk/too much/not at all, issues with pumping, medication questions, returning to work and more."
+          android:textSize="12dp"
+           android:fontFamily="sans-serif-light"
+           android:textColor="@color/black"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+          android:layout_marginRight="20dp"/>
+         
+    </LinearLayout>
+
+</ScrollView></RelativeLayout>

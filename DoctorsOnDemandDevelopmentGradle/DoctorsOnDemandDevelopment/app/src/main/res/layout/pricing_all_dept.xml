@@ -1,0 +1,444 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/logo"
+            android:text="Pricing"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- <TextView
+             android:id="@+id/next"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text="Next"
+             android:textColor="@color/Pink"
+             android:textSize="16sp"
+             android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerRlt">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+           <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/SkyBlue">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pricing"
+                    android:textSize="30sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-light"
+
+                    android:textColor="@color/White"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Pricing is simple. You pay a one time fee for each visit. No subscriptions. No hidden costs."
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Medical Doctor"
+                android:fontFamily="sans-serif-light"
+
+                android:textSize="16sp"
+                android:textColor="@color/dark_pink" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Psychology"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+
+                android:textColor="@color/dark_pink" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Lactation Consultant"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+
+                android:textColor="@color/dark_pink" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Medical Doctor"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/SkyBlue">
+
+                <TextView
+                    android:id="@+id/price_medical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$40"
+                    android:textSize="50sp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/White"
+                    android:fontFamily="sans-serif-light"
+
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="per visit"
+                    android:textColor="@color/White"
+                    android:fontFamily="sans-serif-light"
+
+                    android:layout_below="@+id/price_medical"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="15 minutes - $40"
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Our Board Certified Physicians can diagnose, treat and prescribe medications through our Video Visits for many common urgent care conditions."
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Psychology"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/SkyBlue">
+
+                <TextView
+                    android:id="@+id/price_Psychology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$50"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="50sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/minute25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/price_Psychology"
+                    android:text="25 minute
+session"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-light"
+
+                    android:textColor="@color/White"/>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_below="@+id/price_Psychology"
+                    android:layout_width="200dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/White"
+                    android:visibility="visible" />
+                <TextView
+                    android:id="@+id/price_Psychology1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$95"
+                    android:layout_marginLeft="60dp"
+                    android:layout_below="@+id/line"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="50sp"
+                    android:fontFamily="sans-serif-light"
+
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/minute50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/price_Psychology1"
+                    android:text="50 minute
+session"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/line"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-light"
+
+                    android:textColor="@color/White"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="25 Minutes - $50"
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="50 Minutes - $95 (~50% less than what is typically charged)"
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="We work with licensed psychologists to provide high quality one-on-one Emotional Health consultations."
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Lactation Consultant"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/SkyBlue">
+
+                <TextView
+                    android:id="@+id/price_lactation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$40"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="50sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/minute25_lactation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/price_lactation"
+                    android:text="25 minute
+session"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-light"
+
+                    android:textColor="@color/White"/>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_below="@+id/price_lactation"
+                    android:layout_width="200dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/White"
+                    android:visibility="visible" />
+                <TextView
+                    android:id="@+id/price_lactation1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$70"
+                    android:layout_marginLeft="60dp"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="50sp"
+                    android:fontFamily="sans-serif-light"
+
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/minute50_lactation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/price_lactation1"
+                    android:text="50 minute
+session"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/line2"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-light"
+
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/White"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="25 minutes - $40"
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="50 minutes - $70 (~50% Less than National Average)"
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:text="Doctor on Demand offers a cost-effective alternative to the rising costs of Lactation Consultants, many charging up to $300 per visit. What's really priceless is the convenience of doing it from home, without the need to take baby to another office visit."
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

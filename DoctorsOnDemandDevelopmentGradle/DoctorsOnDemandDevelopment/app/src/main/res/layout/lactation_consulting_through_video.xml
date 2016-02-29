@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/logo"
+            android:fontFamily="sans-serif-light"
+            android:text="What is Lactation Consulting"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <!-- <TextView
+             android:id="@+id/next"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text="Next"
+             android:textColor="@color/Pink"
+             android:textSize="16sp"
+             android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerRlt">
+    
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:background="@color/SkyBlue">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="40dp"
+                 android:layout_marginTop="60dp"
+                 android:text="Lactation Consulting
+Through Video"
+                 android:textColor="@color/White"
+                 android:textSize="20sp"
+                 android:fontFamily="sans-serif-light"
+                 android:textStyle="bold" />
+         </RelativeLayout>
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Here's what a mom can expect during a typical video visit with a Doctor On Demand Lactation Consultant:"
+          android:textSize="12dp"
+          android:textColor="@color/black"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="bold"
+          android:fontFamily="sans-serif-light"
+          android:layout_marginRight="20dp"/>
+      
+       <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="1) Mom enters her concerns and any breastfeeding issues into the Doctor on Demand app. The certified Lactation Consultant (LC) will review the information prior to connecting with her."
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+           android:textColor="@color/black"
+           android:fontFamily="sans-serif-light"
+          android:layout_marginRight="20dp"/>
+       <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="2) Once the LC connects with mom, she will make sure mom is comfortable and the baby is taken care of, so they're able to focus the visit on addressing the main issues. Through a face-to-face consult, the LC will review mom's questions and concerns in more detail."
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+           android:textColor="@color/black"
+           android:fontFamily="sans-serif-light"
+          android:layout_marginRight="20dp"/>
+       <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="3) Next is visualization; where video becomes very helpful. The LC can inspect the nipples for any wounds, which may indicate position issues. She may also want to inspect the baby's tongue to check for any abnormalities. Through the hi-resolution camera, the LC is able to see mom and baby just as if they were in the room together."
+          android:textSize="12dp"
+           android:fontFamily="sans-serif-light"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+           android:textColor="@color/black"
+          android:layout_marginRight="20dp"/>
+     <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="4) The LC may then ask the mom to do a feeding, so she can look at for any trouble latching, for incorrect positioning and observe the baby's ability to feed."
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+         android:textColor="@color/black"
+         android:fontFamily="sans-serif-light"
+          android:layout_marginRight="20dp"/>
+     <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Learning The Right Motions"
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="bold"
+         android:fontFamily="sans-serif-light"
+         android:textColor="@color/black"
+          android:layout_marginRight="20dp"/>
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="In a hospital setting, the clinicians tend to put the baby on the breast for mom. These feedings usually go wonderfully. But once she's home, mom isn't always able to get the right positioning on her own. Doctor on Demand's lactation consulting can be particularly empowering for moms in that it essentially requires her to start doing the &#34;work and learning with their newborns. During a consult with Doctor on Demand, the LC is hands free, giving clear instructions/demonstrations for mom to replicate on her own. This also ensures mom is working to learn the motions herself, enabling success long after the visit is over."
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+          android:textColor="@color/black"
+          android:fontFamily="sans-serif-light"
+          android:layout_marginRight="20dp"/>
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="More often than not, the Lactation Consultants are able to help mom resolve any issues within 1-3 visits, giving her the tools and the confidence she needs to continue with her breastfeeding goals."
+          android:textSize="12dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:textStyle="normal"
+          android:fontFamily="sans-serif-light"
+          android:textColor="@color/black"
+          android:layout_marginRight="20dp"/>
+      
+      </LinearLayout>
+      
+
+</ScrollView></RelativeLayout>

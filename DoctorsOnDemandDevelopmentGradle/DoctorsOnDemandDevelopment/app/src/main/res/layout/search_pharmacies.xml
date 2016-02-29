@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/logo"
+            android:text="Messages"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerRlt">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGrey" >
+
+        <RelativeLayout
+            android:id="@+id/search_nearby_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/pink_btn" >
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:text="Search Near Me"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@color/Gray" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@+id/separator"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR SEARCH MANUALLY : "
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/Gray"/>
+    <LinearLayout
+        android:id="@+id/editbox_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/separator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:hint="Zip Code (Optional)" >
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:hint="Name (Optinal)" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:hint="Phone Number (Optional)"
+            android:maxLength="10"
+            android:inputType="number" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/showHide"
+        android:layout_below="@+id/editbox_layout"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW FILTERS "
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/Gray"/>
+    <ImageView
+        android:id="@+id/downArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editbox_layout"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/showHide"
+        android:src="@drawable/downarrow" />
+    <RadioButton
+        android:id="@+id/chk24HR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/showHide"
+        android:button="@drawable/radio_selector"
+        android:checked="false" />
+    <TextView
+        android:id="@+id/text24hr"
+        android:layout_below="@+id/showHide"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/chk24HR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 Hours Only "
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"/>
+    <RelativeLayout
+        android:id="@+id/retailRlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk24HR"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inner_menubox">
+
+        <TextView
+            android:id="@+id/retailTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Retail"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/retailChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:button="@drawable/radio_selector"
+            android:checked="false" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mail_orderRlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retailRlt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/inner_menubox">
+
+        <TextView
+            android:id="@+id/mail_orderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Mail Order"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/mail_orderChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:button="@drawable/radio_selector"
+            android:checked="false" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/long_termRlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail_orderRlt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/inner_menubox">
+
+        <TextView
+            android:id="@+id/long_termTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Long Term Care"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/long_termChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:button="@drawable/radio_selector"
+            android:checked="false" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/specialityRlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/long_termRlt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/inner_menubox">
+
+        <TextView
+            android:id="@+id/specialityTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Speciality"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/specialityChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:button="@drawable/radio_selector"
+            android:checked="false" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/searchRlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specialityRlt"
+        android:layout_margin="10dp"
+        android:background="@drawable/blue_btn" >
+
+        <TextView
+            android:id="@+id/searchlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="Search for Pharmacy"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

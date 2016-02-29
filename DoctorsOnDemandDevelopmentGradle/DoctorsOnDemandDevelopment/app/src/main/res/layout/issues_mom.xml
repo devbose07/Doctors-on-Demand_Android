@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/logo"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="Issues Affecting Mom"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- <TextView
+             android:id="@+id/next"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text="Next"
+             android:textColor="@color/Pink"
+             android:textSize="16sp"
+             android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerRlt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/medical_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="Issues Affecting Mom"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+       <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="It is very common for new parents to experience challenges with breastfeeding and to have questions and concerns. Doctor On Demand works with International Board Certified Lactation Consultants (IBCLCs) to provide the guidance and support new moms need, so they can have the best possible experience breastfeeding. The first two weeks of breastfeeding is especially crucial. Mom is tired, but must adjust to her milk supply. Baby is learning to latch. If baby's latch is incorrect then this is when sore and cracked nipples can very quickly come into play. It's important to lay down good breastfeeding habits in the first two weeks and our Lactation Consultants at Doctor On Demand are ready to help. Doctor On Demand provides an alternative to visiting a doctor's office, giving moms the guidance they need, from the comfort of home. We understand the more confident moms feel breastfeeding, the more they feel encouraged to extend breastfeeding. In fact, 80%+ of issues can be treated in only 1-2 visits with a Lactation Consultant. If treated within the first 48 hours, that percentage of success increases to 85-90%. The most common issues for mothers include:"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+           android:fontFamily="sans-serif-light"
+           android:textColor="@color/black"
+          android:textStyle="normal"
+          android:textSize="12dp"
+          />
+        <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="1) Sore nipples"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:textStyle="bold"
+          android:textSize="12dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+  
+          />
+         <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Sore and tender nipples for the first couple of weeks is expected, but cracked, bleeding, scabbed and/or blistered nipples are usually signs of a problem. A Lactation Consultant (LC) may be able to determine the problem simply based on the appearance of the nipple injury and provide a plan of action. For example a linear scab or bruise means mom is having positional issues. The Lactation Consultant may walk her through what's called an asymmetrical latch, which a lot of moms don't naturally do, to line up the baby better for feeding. Seeking help from a Lactation Consultant at the onset of any of these symptoms could prevent further damage."
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:textStyle="normal"
+          android:textSize="12dp"
+             android:fontFamily="sans-serif-light"
+             android:textColor="@color/black"
+          />
+         
+         <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="2) Milk production"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+             android:fontFamily="sans-serif-light"
+             android:textColor="@color/black"
+          android:textStyle="bold"
+          android:textSize="12dp"
+          />
+          <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Am I making enough milk? Am I feeding frequently enough? Every mom worries if her baby is getting enough breast milk because she can't measure how much is going to her baby. One visit with our Lactation Consultants provides peace of mind in many ways, and will help to ensure mom understands whether her baby is getting the breast milk she needs to thrive and be healthy. For example, mom can weigh the baby and count how many times her baby urinates. There are many simple ways our trained LCs can put mom's mind at ease."
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:textStyle="normal"
+          android:textSize="12dp"
+              android:fontFamily="sans-serif-light"
+              android:textColor="@color/black"
+          />
+           <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="3) Plugged ducts and mastitis"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:textStyle="bold"
+               android:fontFamily="sans-serif-light"
+               android:textColor="@color/black"
+          android:textSize="12dp"
+          />
+            <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="If a new mom finds a lump or a hardened area of the breast with or without flu-like symptoms it could be a plugged duct or mastitis. Lactation Consultants can work with mom to resolve the plugs before they become infected. Lactation Consultants will also recognize when an infection has begun and refer the mother to a physician for treatment."
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:textStyle="normal"
+          android:textSize="12dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+          />
+             <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="4&#41;Returning To Work, Bottles &#38; Storage"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:textStyle="bold"
+                 android:fontFamily="sans-serif-light"
+                 android:textColor="@color/black"
+          android:textSize="12dp"
+          />
+              <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Initially the majority of breastfeeding problems are soreness, tiredness and the newness of it all. But when babies are around 3 months old many moms in the US go back to work and new issues start - 'my baby won't take a bottle' or 'I'm not making enough to store, how do I increase my supply?' Our Lactation Consultants can advise on which bottles to use, how to sterilize them, and recommended pumps, how long to pump for, how to store the milk and more. Our Lactation Consultants are trained to give researched based answers, not just share what worked for them, to allow mom to make more informed decisions on what is best for her and her baby, and to breastfeed for as long as she would like."
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:textStyle="normal"
+          android:textSize="12dp"
+                  android:fontFamily="sans-serif-light"
+                  android:textColor="@color/black"
+          />
+    </LinearLayout>
+</ScrollView></RelativeLayout>

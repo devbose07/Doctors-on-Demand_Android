@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg" >
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+         <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:fontFamily="sans-serif-light"
+            android:text="CHOOSE APPOINTMENT"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+             android:layout_centerInParent="true" />
+       <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Next"
+           android:fontFamily="sans-serif-light"
+            android:textColor="@color/dark_pink"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerRlt"
+        android:background="@color/dark_pink"
+        android:layout_margin="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/mid"
+            android:background="@color/White"
+            android:layout_margin="2dp"
+            >
+            <TextView
+                android:id="@+id/tab1Txt"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Calender"
+                android:fontFamily="sans-serif-light"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/mid"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:fontFamily="sans-serif-light"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mid"
+            android:layout_margin="2dp"
+            >
+            <TextView
+                android:id="@+id/tab2Txt"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="List"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_margin="3dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/calenderRlt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        android:visibility="visible">
+        <CalendarView
+            android:id="@+id/calender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dateRlt"/>
+        <RelativeLayout
+            android:id="@+id/dateRlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/SkyBlue"
+            android:layout_above="@+id/list"
+            >
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-light"
+                android:layout_margin="3dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedules Unavailable"
+            android:id="@+id/no_schedules_calender"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"
+            android:layout_below="@+id/dateRlt"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            />
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true" >
+        </ListView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/listRlt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedules Unavailable"
+            android:id="@+id/no_schedules_list"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+           />
+
+        <ListView
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent" >
+        </ListView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

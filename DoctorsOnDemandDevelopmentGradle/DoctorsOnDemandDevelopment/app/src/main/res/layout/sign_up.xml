@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" />
+
+    <View
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/iforgot"
+        android:layout_alignRight="@+id/iforgot"
+        android:layout_below="@+id/iforgot"
+        android:background="@color/logo_color" />
+
+    <LinearLayout
+        android:id="@+id/editbox_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:hint="@string/email_hint" >
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:hint="@string/name" />
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:hint="@string/pass_hint"
+            android:inputType="textPassword" />
+        <View
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLength="10"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:hint="Date of Birth"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup_btn"
+        android:layout_below="@+id/editbox_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/agreedTerms"
+            android:text="@string/iagree"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/agree"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/agreedTerms"
+            android:text="@string/tc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/dark_pink" />
+
+        <ImageView
+            android:id="@+id/agreedTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/checkbox_unchecked"
+            android:button="@null" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-light"
+        android:background="@drawable/signup_btn" />
+
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
