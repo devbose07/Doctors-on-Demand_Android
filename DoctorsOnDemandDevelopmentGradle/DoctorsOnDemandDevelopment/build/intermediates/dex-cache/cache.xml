@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="997773777cf3904c11d6764fe3b7668538220e49">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-8.1.0_f7d83bf79f3c7c3c14a8b046586bd1de0d9dbafc.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.android.support-mediarouter-v7-22.2.0_ee0cb419327e7a9ba34b958ff1d3953f8a037224.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="97f3b099801a9ad9d70e835b9125273e986eb68d">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-wearable-8.1.0_7b773928c5e18b58423f7d6dcc8878a7d5e86d83.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appinvite-8.1.0_f46a81d7f34bbcc620c544cabdc9212178f604f7.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\libs\quickblox-android-sdk-chat-2.3.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dd9249113874fd67cddbcc66f6ba7b595e45bbc4">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\quickblox-android-sdk-chat-2.3.3_b188a2cbfadec05ae765a0a1059f164809591fd5.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-wallet-8.1.0_d85f5d412d6dd4cff4d64e857822a08ba442f94f.jar" />
+    </item>
+    <item
+        jar="C:\Users\GLB-276\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0_07a233554c3d67304fd2e45fb338dcfc11fd1573.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-8.1.0_3905daebbaeec178bd1e4b754d78e115ae55723b.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0_bfb91d4c5e66c7a93f7e8e54e0d83709584e529c.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\libs\PayPalAndroidSDK-2.10.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3be6ba6407969df0e4419ae7b9f16d733d25cf22">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\PayPalAndroidSDK-2.10.0_e3346cd156f396f581307a6ba63c52d8a8263b03.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3c729e6d76a36c5dc27e6a4c4009296f49eaa88a">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-drive-8.1.0_b7514dc1a88a23d0cd0eca937fc6b2f929fb9ee2.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.0_480c9b7baec6b2d8dd3a22406f5d307660fcf9bf.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-plus-8.1.0_6d5b0141b576258e86a0f38c1580406535d90275.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-8.1.0_773311e89c90b470519d04367ec0c96ef802ca6e.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.0_9727b6ee06a76e953cb6e7b712448fdb0b297176.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.1.0_cb1e89f11ab4a4e8d1be62bba865fddb8636fe7a.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d93480da1d303122ee67dc3bc23e6297bdef9951">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-panorama-8.1.0_a67abb61713a38acf7fa386c7d397fcb5f9f2cce.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3b05c18f60969ecc2ba49c0409c4b96be2d9cb0c">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-safetynet-8.1.0_3b8b9275ee7bd9961fd0d8ff2e416b0dba5d6dfc.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\libs\quickblox-android-sdk-videochat-webrtc-2.3.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4e14137bd5e9e02d7ad15a807578b1d4d576e9c6">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\quickblox-android-sdk-videochat-webrtc-2.3.3_1a72b01f176fb7b60d12c8dafed12219a126aae4.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="482de223655d06253cc6a4955d653f8994169500">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-measurement-8.1.0_a7d715054a32e291d082eb7b9ab174b2c7b5c158.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0_4a87dc0a5e7a24da1252b5edacdde6e8fc0c913b.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="17449c47df35c754b257532052f1270c444f7993">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-vision-8.1.0_b2b73ae67d7674767263ccb2105acf9a1b9f7714.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3178362320bcf51228835b60ff978efadfd1f783">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-cast-8.1.0_2f59d982fbd92e28044a754a268d60dae9c24252.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="95758a2905669affbffc5ddd262921d375674fad">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-8.1.0_5d956f0b9c1f0448ce2bf4abdd434f0c0cd7fdea.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d294caf562c4c678b2ef351662a0ca6f1a4d06c0">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-identity-8.1.0_cfbffbd750d95a5b2d377e4c444b4b17ca704842.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.1.0_3235b7829b513d81662043750c7fb71e63cb1689.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9cf8c0ef60847621c7ad00b4f78dbfc9daba4af2">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-fitness-8.1.0_bd7cf02e5b6ea041a2e2494c093b88dd147455cf.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\libs\volley.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\volley_2e3fc1f9868024a6516b80892bacebb9739c9da2.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-games-8.1.0_d200d6d49930a5540a1b35f7befaa8e7374fa95d.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gcm-8.1.0_9443c421655759af9a1edcae9151bbcda5160590.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\libs\quickblox-android-sdk-core-2.3.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="807baca05a8ece9e4ed80d53bf0acf931c2d05b8">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\quickblox-android-sdk-core-2.3.3_1ea0a01120087bd544bba477d2319668c5fdcf93.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="041d93cf0533591c29d1d7263b2fa114dbfb20bd">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-nearby-8.1.0_711c4d84e271eb0c8befc07f969ab9a445165fbb.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDevelopmentGradle\DoctorsOnDemandDevelopment\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.1.0_4ec9997026d940da5e7ec41dabb4fcf1839257cf.jar" />
+    </item>
+
+</items>
