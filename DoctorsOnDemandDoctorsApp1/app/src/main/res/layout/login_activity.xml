@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/editbox_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/email_hint" />
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/pass_hint"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editbox_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sign_btn" />
+
+    <TextView
+        android:id="@+id/iforgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/iforgot_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/logo_color"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/iforgot"
+        android:layout_alignRight="@+id/iforgot"
+        android:layout_below="@+id/iforgot"
+        android:background="@color/logo_color"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signin_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/recoverlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" 
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/card_bg" >
+
+            <EditText
+                android:id="@+id/recoverymail"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:ems="10"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/recoverymail" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/clickhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pink_btn"
+            android:text="Click here"
+            android:textColor="@color/White" />
+    </RelativeLayout>
+
+</RelativeLayout>

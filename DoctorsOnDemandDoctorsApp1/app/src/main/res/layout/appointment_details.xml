@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        android:paddingBottom="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Next"
+            android:textColor="@color/Pink"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/createdrill_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerRlt">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <LinearLayout
+                android:id="@+id/userdetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+                <RelativeLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Name:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/name_title"
+                        android:text="Name:" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/address_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Address:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/address_title"
+                        android:text="Address:" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Blood_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Blood Group:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/blood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/Blood_title"
+                        android:text="Blood Group" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Weight_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Weight:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/Weight_title"
+                        android:text="Weight" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/purpose"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+
+                android:layout_below="@+id/userdetails"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/purpose"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/purpose_reson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/purpose"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="18dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/Medication"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/purpose_reson"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Medication"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.globussoft.readydoctors.doctor.uttils.NestedListView
+                android:id="@+id/medication"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Medication"
+                android:divider="@null"
+                android:dividerHeight="0dp"></com.globussoft.readydoctors.doctor.uttils.NestedListView>
+
+            <TextView
+                android:id="@+id/Symptoms"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/medication"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Symptoms"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/general_symtoms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Symptoms"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/general_symtoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/general_Symptoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+
+                        android:text="General Symptoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/general_Symptoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/general_Symptoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relationshipSymptoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/relationshipSymptoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="Relationship Symptoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/relationshipSymptoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/relationshipSymptoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/headNeckSymptoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/headNeckSymptoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="Head Neck Symptoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/headNeckSymptoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/headNeckSymptoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/breastSymtoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/breastSymtoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="Breast Symtoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/breastSymtoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/breastSymtoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/babySymptoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/babySymptoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="Baby Symtoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/babySymptoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/babySymptoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nippleSymptoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/nippleSymptoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="Nipple Symptoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nippleSymptoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/nippleSymptoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/chestSymptoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/chestSymptoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="Chest Symptoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/chestSymptoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/chestSymptoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pelvisSymptoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/pelvisSymptoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="Pelvis Symptoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pelvisSymptoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/pelvisSymptoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/skinSymptoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/skinSymptoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="Skin Symptoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/skinSymptoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/skinSymptoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/muscleSymptoms_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/muscleSymptoms_title"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="Muscle Symptoms:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/muscleSymptoms_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/muscleSymptoms_title"
+                        android:text="kgvnm mf mfm mfmdf mflmf mlf mml ndkfn nkdnfd knkfnd nkfd knf" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/Allergies"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/general_symtoms"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Allergies"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/allergies_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Allergies"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/MedicalCondition"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/allergies_list"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/MedicalCondition"
+                android:textColor="@color/White"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <com.globussoft.readydoctors.doctor.uttils.NestedListView
+                android:id="@+id/medical_condition_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MedicalCondition"
+                android:divider="@null"
+                android:dividerHeight="0dp">
+
+            </com.globussoft.readydoctors.doctor.uttils.NestedListView>
+
+
+
+                <Button
+                    android:id="@+id/generatereport"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pink_btn"
+                    android:layout_below="@+id/medical_condition_list"
+                    android:text="Generate Report"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/White"
+                    android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/reject"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/pink_btn"
+                android:layout_below="@+id/medical_condition_list"
+                android:text="Reject Appointment"
+                android:layout_margin="5dp"
+                android:textColor="@color/White"
+                android:visibility="invisible"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

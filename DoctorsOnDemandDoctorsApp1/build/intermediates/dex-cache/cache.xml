@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\GLB-276\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-07a233554c3d67304fd2e45fb338dcfc11fd1573.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\pre-dexed\debug\classes-183352f43fb0652a54084ab2ff3985f85512e78e.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-b4bedd23b79929d63ca13f0684b9df12d8f58a72.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\libs\quickblox-android-sdk-core-2.3.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="807baca05a8ece9e4ed80d53bf0acf931c2d05b8">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\pre-dexed\debug\quickblox-android-sdk-core-2.3.3-c9a584397bc1b3c9f71d54e21abafbaf7f94bb26.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\libs\quickblox-android-sdk-chat-2.3.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dd9249113874fd67cddbcc66f6ba7b595e45bbc4">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\pre-dexed\debug\quickblox-android-sdk-chat-2.3.3-93d0e1dbc5d8543c68465040483277eec52c5bce.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\libs\volley.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\pre-dexed\debug\volley-4091c28874d43f08aa57f5f17e4fb6f4d2b91ee5.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\libs\quickblox-android-sdk-videochat-webrtc-2.3.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4e14137bd5e9e02d7ad15a807578b1d4d576e9c6">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\pre-dexed\debug\quickblox-android-sdk-videochat-webrtc-2.3.3-6f439501e7236d07e626eb0d8274fab94b85206d.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="D:\AndroidStudioWorkspace\DoctorsOnDemandDoctorsApp1\app\build\intermediates\pre-dexed\debug\classes-40757c1a3019da514f7dd9a5131ecdb071688bbb.jar" />
+    </item>
+
+</items>

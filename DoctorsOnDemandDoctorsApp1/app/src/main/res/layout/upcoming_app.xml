@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/headerRlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_bg"
+        android:paddingBottom="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/backImage"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Next"
+            android:textColor="@color/Pink"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/createdrill_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerRlt">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/purpose"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/purpose"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/purpose_reson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/purpose"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/Medication"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/purpose_reson"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Medication"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.globussoft.readydoctors.doctor.uttils.NestedListView
+                android:id="@+id/medication"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Medication"
+                android:divider="@null"
+                android:dividerHeight="0dp"></com.globussoft.readydoctors.doctor.uttils.NestedListView>
+
+            <TextView
+                android:id="@+id/Symptoms"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/medication"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Symptoms"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.globussoft.readydoctors.doctor.uttils.NestedListView
+                android:id="@+id/general_symtoms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Symptoms"
+                android:divider="@null"
+                android:dividerHeight="0dp"></com.globussoft.readydoctors.doctor.uttils.NestedListView>
+
+
+            <TextView
+                android:id="@+id/Allergies"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/general_symtoms"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Allergies"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <com.globussoft.readydoctors.doctor.uttils.NestedListView
+                android:id="@+id/allergies_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Allergies"
+                android:divider="@null"
+                android:dividerHeight="0dp"></com.globussoft.readydoctors.doctor.uttils.NestedListView>
+
+            <TextView
+                android:id="@+id/MedicalCondition"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/allergies_list"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_sky"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/MedicalCondition"
+                android:textColor="@color/White"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <com.globussoft.readydoctors.doctor.uttils.NestedListView
+                android:id="@+id/medical_condition_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MedicalCondition"
+                android:divider="@null"
+                android:dividerHeight="0dp"></com.globussoft.readydoctors.doctor.uttils.NestedListView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

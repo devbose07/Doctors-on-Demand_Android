@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ReadyDoctor-Doctor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- Apoinment details -->
+    <string name="purpose">Purpose of Visit</string>
+    <string name="Medication">Mediction</string>
+    <string name="Symptoms">Symptoms</string>
+    <string name="Allergies">Allergies</string>
+    <string name="MedicalCondition">Medical Condition</string>
+    <!-- Apointment -->
+
+    <string name="begin">Your appointment will begin between</string>
+    <string name="infotext">We will hold your appointment request for 30 minutes while you answer a few question.</string>
+    <string name="visit_purpose">Please briefly describe the purpose of your visit:</string>
+    <string name="time_period">When did you start feeling this way?</string>
+    <!-- Home -->
+    <string name="me">Me</string>
+    <string name="myhealth">My Health</string>
+    <string name="appointment">Appointments</string>
+
+    <!-- Medication -->
+    <string name="medication_text">Please tell us if you are currently taking any medications,and if so,how long?</string>
+    <string name="spinner_title">The past week</string>
+
+    <!-- Alergies -->
+    <string name="allergies">Please tell us any allergies you have: </string>
+
+    <!-- Symtoms -->
+    <string name="symptoms">Do you have any of the symptoms? Tap all that apply.</string>
+
+    <!-- Medical condition -->
+    <string name="medical_condition">Please let us know if you have any medical conditions. Tap all that apply.</string>
+
+    <!-- Apply coupon page -->
+    <string name="couponmsg">Do you have coupon code to use with Ready Doctor? </string>
+    <!-- Landing -->
+
+    <string name="ondemand">On Demand</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="meetus">Meet Us</string>
+
+    <!-- Login Page -->
+
+    <string name="email_hint">Email Address</string>
+    <string name="pass_hint">Password</string>
+    <string name="iforgot_text">I Forgot My Password</string>
+    <string name="recoverymail">Recovery mail address</string>
+    <!-- SignUp -->
+    <string name="name">Full Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="iagree">I agree to Doctor on Demands\'s</string>
+    <string name="tc">Terms of Use &amp; Informed Consent </string>
+
+    <!-- navigation drawer -->
+    <string name="getfree">Get Free Visits!</string>
+    <string name="applycoupon">Apply Coupon</string>
+    <string name="addreferal">Add Referral Source</string>
+    <string name="updateemail">Update Email &amp; Password</string>
+    <string name="updatename">Update Name &amp; Address</string>
+    <string name="updatepayment">Update Payment Method</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="support">Support</string>
+    <string name="Feedback">Feedback</string>
+    <string name="SignOut">Sign Out</string>
+
+    <!-- Support -->
+
+    <string name="Support_msg">Are you having issue with doctors or not sure how to use our service? We are here to help.</string>
+
+
+    <!--VideoChat-->
+    <string name="logged_in_as">Logged In As</string>
+    <string name="hungUp">Hang Up</string>
+    <string name="noAnswer">no Answer</string>
+    <string name="checking">checking</string>
+    <string name="rejected">rejected</string>
+    <string name="closed">closed</string>
+    <string name="connected">connected</string>
+    <string name="time_out">time out</string>
+    <string name="failed">failed</string>
+    <string name="disconnected">disconnected</string>
+    <string name="incoming_video_call">incoming video call</string>
+    <string name="incoming_audio_call">incoming audio call</string>
+    <string name="internet_not_connected">internet not connected</string>
+    <string name="wait_until_login_finish">wait until login finish</string>
+
+</resources>
